@@ -1,0 +1,187 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: arial;
+	background-color: #FAFAFA;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Rethink Sans', sans-serif;
+}
+
+
+section {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 25px;
+	align-items: center;
+	height: 100vh;
+}
+
+section nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #202834;
+	color: white;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	z-index: 99999;
+}
+
+section nav h1 {
+	font-size: 24px;
+	margin-left: 15px;
+}
+
+section h1 {
+	font-size: 60px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+section .name {
+	display: flex; 
+	align-items: center;
+	flex-direction: column;
+}
+
+section .name img {
+	position: absolute;
+	z-index: -999;
+	top: 200px;
+	width: 160px;
+	height: 160px;
+	background-size: cover;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 0 2px 5px 2px black;
+}
+
+section .name span {
+	font-size: 25px;
+}
+
+section .button-style {
+	display: flex;
+	gap: 15px;
+	width: 450px;
+	justify-content: center;
+}
+
+section .button-style .portfolio {
+	outline: none;
+	border: none;
+	padding: 25px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #202834;
+	background-color: white;
+	box-shadow: 0 2px 4px black;
+	transition: .5s ease-in-out;
+}
+
+section .button-style .resume {
+	outline: none;
+	border: none;
+	padding: 25px;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #202834;
+	color: white;
+	box-shadow: 0 2px 4px white;
+	transition: .5s ease-in-out;
+
+}
+
+section .button-style .portfolio:hover {
+	background-color:#F3F3F3 ;
+}
+
+section .button-style .resume:hover {
+	background-color: #484E5A;
+}
+
+
+.cv {
+	display: none;
+	position: absolute;
+	top: 100px;
+	z-index: 999;
+	background-size: cover;
+	background-position: center;
+	transition: 1s ease-in-out;
+}
+
+.close {
+	display: none;
+	position: absolute;
+	top: 64px;
+	border-radius: 5px;
+	background-color: #3B4457;
+	cursor: pointer;
+	padding: 5px;
+	color: white;
+}
+
+.download {
+	display: none;
+	position: absolute;
+	top: 64px;
+	right: 750px;
+	text-decoration: none;
+	border-radius: 5px;
+	background-color: #2C2F36;
+	cursor: pointer;
+	padding: 5px;
+	color: white;
+}
+
+@media only screen and (max-width: 502px) {
+	section {
+		width: 100%;
+		margin: auto;
+	}
+
+	section .name h1 {
+		width: 80%;
+		font-size: 30px;
+		text-align: center;
+	}
+	section .name span {
+		font-size: 20px;
+		margin: 5px 0;
+	}
+
+	section .name p {
+		font-size: 13px;
+		text-align: center;
+	}
+
+	section .name img {
+		position: absolute;
+		top: 150px;
+	}
+
+	.cv {
+		width: 100%;
+	}
+
+	.download {
+		left: 245px;
+		width: 110px;
+		text-align: center;
+		margin: auto;
+	}
+
+	
+
+	
+
+	
+}
